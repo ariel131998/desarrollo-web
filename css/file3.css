@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color:rgb(235, 235, 235);
+}
+
+.header-superior, .section-portafolio, .aside-portafolio, .footer-final, .nav{
+    padding: 1em 2em; /*por defecto 1 em son 16px*/
+
+}
+
+.section-portafolio, .aside-portafolio, .footer-final, .nav{
+    float: left;
+    box-sizing: border-box;
+}
+
+.header-superior{
+    background-color:rgb(59, 59, 59);
+    color: aliceblue;
+    height: 140px;
+    /*overflow: auto;*/
+}
+
+.section-portafolio{
+    width: 100%;
+    padding-left:0px;
+}
+#image1, #image2{
+    width:30%; 
+}
+#image2{
+    margin-left: 40%;
+}
+.section-portafolio__article{
+    display: inline-block;
+    width: 67%;
+    float:right;
+    padding: 15px;
+    text-align: justify;
+    font-size:20px;
+}
+#Languages{
+    padding-left: 15px;
+}
+.section-portafolio__footer{
+    display: inline-block;
+    width: 67%;
+    float: right;
+    
+}
+
+.section-portafolio__header{
+    display: inline;
+    
+}
+
+
+/*pie de pagina*/
+.footer-final{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*ocultamos el nav responsive*/
+.nav__responsive-ul{
+    display: none;
+}
+
+/*propiedades nav */
+.nav {
+    background-color: #30588E  ;
+    width: 100%;
+    padding: 10px;
+}
+.nav__li {
+    display: inline-block;
+    padding: 9px;
+    color: #fff;
+}
+.nav__li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav__li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.nav__li:hover > a{
+    color: #bbb;
+}
+.nav__li:hover {
+    color: #bbb;
+}
+
+/*aspecto de menu dos responsive*/
+.nav__responsive-button{
+    float: right;
+    font-size: 25px;
+    padding: 6px 20px;
+}
+
+
+
+
+
+
+/*van las media type*/
+
+/*computadora*/
+@media screen and (min-width: 780px) and (max-width: 1024px){
+
+}
+
+/*tablet*/
+@media screen and (min-width: 480px) and (max-width: 780px){
+    
+}
+
+/*celular*/
+@media screen and (max-width: 660px){
+    .section-portafolio__article, .section-portafolio__footer, .aside-portafolio{
+        width: 100%;
+    }
+    #image1, #image2{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .footer-final{
+        position: relative;
+        
+    }
+    
+    .header-superior h1{
+        font-size: 1.2em;
+    }
+    .header-superior h4{
+        font-size: .7em;
+    }   
+    /*ocultamos nav no responsive para mostrar la otra*/
+    .nav__ul{
+        display: none;
+    }
+/*terminar el menu desplegable*/
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+    .nav{
+        height: 53px;
+    }
+    
+}
+
+
+
+
+
+
+/*
+.header-superior, .section-portafolio, .aside-portafolio, .footer-final{
+
+}
+*/

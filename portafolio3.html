@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang=es>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Ariel Ortega">
+        <meta name="description" content="Pagina que utiliza las estrucuturas basicas de html5">
+        <meta name="keywords" content="html5,desarrollo web">
+        <title>Portafolio en HTML5</title>
+        <link rel="stylesheet"  href="css/file3.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="icon"  href="imagenes/icono.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2dea6f6f6c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header-superior">
+           <h4>ariel ortega</h4> 
+           <h1>Computing science engineer</h1>
+           <h4>Puebla, Mexico</h4>
+        </header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"> <i class="fas fa-home"></i> <a href="index.html">inicio</a></li>
+				<li class="nav__li"> <i class="fas fa-portrait"></i> <a href="portafolio1.html">1ra Version Portafolio</a></li>
+				<li class="nav__li"> <i class="fas fa-video"></i> <a href="videos.html">videos</a></li>
+				<li class="nav__li"> <i class="fas fa-portrait"></i> <a href="portafolio2.html">2da Version</a></li>
+                <li class="nav__li"> <i class="fas fa-portrait"></i> <a href="portafolio3.html">3ra Version</a></li>
+            </ul>
+            
+            <ul class="nav__responsive-ul">
+                <div class="nav__responsive-button fas fa-bars"></div>
+                <div class="nav__li-container">
+                    <li class="nav__responsive-li"> <i class="fas fa-home"></i> <a href="index.html">inicio</a></li>
+                    <li class="nav__responsive-li"> <i class="fas fa-portrait"></i> <a href="portafolio1.html">1ra Version Portafolio</a></li>
+                    <li class="nav__responsive-li"> <i class="fas fa-video"></i> <a href="videos.html">videos</a></li>
+                    <li class="nav__responsive-li"> <i class="fas fa-portrait"></i> <a href="portafolio2.html">2da Version</a></li>
+                    <li class="nav__responsive-li"> <i class="fas fa-portrait"></i> <a href="portafolio3.html">3ra Version</a></li>
+                </div>
+                
+            </ul>
+            
+        </nav>
+        <section class="section-portafolio">
+            <header class="section-portafolio__header">
+               <img src="imagenes/perfil.png" alt="foto del propietario del portafolio" id="image1" title="Programador">
+            </header>
+            <article class="section-portafolio__article">
+                <h3>Hello, I'm Ariel</h3>
+                <p>I´m a computing science engineer at BUAP. Right now I am in the seventh semester
+                In my free time, I do exercise like go running or weight training also I enjoy watching 
+                movies and series of any kind, and this year I hope I could go climbing a hill or mountain with my friends.</p>
+                <h3>Programming Languages</h3>
+                <ol id="Languages">
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>html</li>
+                </ol>
+            </article>
+            <footer class="section-portafolio__footer">
+                <img src="imagenes/iconos.png" id="image2">
+            </footer>
+        </section>
+        <aside class="aside-portafolio">
+            <h3>Academico</h3>
+            <ul class="aside-portafolio__ol">
+                <li>Bachillerato internacional POPIB en Diseño Automotriz</li>
+                <li>Computing science engineer at BUAP</li>
+                <li>Languages: English and Japanese</li>
+                <li>Strengths: teamwork and discipline</li>
+            </ul>
+        </aside>
+        <footer class="footer-final">
+            <p>Este portafolio ha sido creado solo para fines practicos</p>
+        </footer>
+    </body>
+</html>

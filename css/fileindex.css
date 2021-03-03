@@ -1,0 +1,13 @@
+a{
+    color: turquoise;
+}
+a:hover{
+    color: rgb(96, 10, 177);
+    background-color: rgb(143, 130, 145);
+}
+a:visited{
+    color: red;
+}
+input:focus{
+     border: red 2px dotted; padding: 2px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ariel Ortega">
+	<meta name="description" content="Pagina que muestra el uso de audio y video en html5">
+	<meta name="keywords" content="html,desarrollo web">
+	<link rel="icon"  href="imagenes\icono.png">
+	<title>Audio-Video HTML5</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="portafolio1.html">1ra Version Portafolio</a></li>
+            <li><a href="videos.html">videos</a></li>
+            <li><a href="portafolio2.html">2da Version</a></li>
+        </ul>
+    </nav>
+    <! ––Video incrustado desde archivo––>
+    <video src="videos_music/hori.mp4" autoplay controls width="50%">
+        <p>
+            Tu navegador no soporta HTML5 video. Aquí esta el
+            <a href="videos_music/hori.mp4">enlace del video</a>
+        </p>
+    </video>
+    <! ––Insertando varios videos a la vez si tienes varios formatos en este caso no––>
+    <video autoplay  controls muted width="50%" height="30%">
+        <source src="videos_music/hori.mp4" type="video/mp4" >
+    </video>
+    <! ––Insertando video con imagen de inicio––>
+    <video  controls muted width="50%" poster="imagen1.png">
+        <source src="videos_music/hori.mp4" type="video/mp4" >
+    </video>
+    <! ––Probando auidio con una fuente solamente––>
+    <audio controls autoplay muted loop>
+        <source src="videos_music/layme.mp3" type="audio/mp3">
+            Tu navegador no soporta audio
+    </audio>
+</body>
+</html>
